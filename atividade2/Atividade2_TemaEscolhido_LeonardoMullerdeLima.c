@@ -233,7 +233,7 @@ int login() {
     return -1;
   }
 
-  printf("Login realizado com sucesso %d\n\n", id);
+  printf("Login realizado com sucesso\n\n");
   return id;
 }
 
