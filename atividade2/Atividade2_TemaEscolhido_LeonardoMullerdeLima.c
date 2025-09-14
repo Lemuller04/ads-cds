@@ -182,7 +182,7 @@ void newAccount() {
            "favor, entre em contato com nosso suporte o quanto antes, "
            "através de um dos seguintes meios:\n");
     printf("Chat online: [link-do-chat]\nEmail: "
-           "[endereço-de-email]\nTelefone: [number-de-telefone]\n\n");
+           "[endereço-de-email]\nTelefone: [numero-de-telefone]\n\n");
 
     printf("Retornando para o menu...\n\n");
     return;
@@ -233,7 +233,7 @@ int login() {
     return -1;
   }
 
-  printf("Login realizado com sucesso\n\n");
+  printf("Login realizado com sucesso.\n\n");
   return id;
 }
 
@@ -278,7 +278,7 @@ void printUserMenu(int id) {
 void printInitialMessage() {
   printf("Hey! Esse é um programa que simula um sistema bancário fictício.\n");
   printf("Feito por Leonardo Müller de Lima, 12/09/2025, para atividade "
-         "prática da matéria de algoritmos a pensamento computacional.\n");
+         "prática da matéria de algoritmos e pensamento computacional.\n");
   printf(
       "Análise e Desenvolvimento de Sistemas, Universidade Cruzeiro do Sul.\n");
   printf("Iniciando sistema...\n\n");
