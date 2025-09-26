@@ -17,7 +17,7 @@ void print_main_menu() {
   printf("\n****************************\n");
   printf("       Menu Principal       \n");
   printf("****************************\n");
-  printf("1 - Visualizar todos os dados\n");
+  printf("1 - Visualizar dados anuais\n");
   printf("0 - Sair\n");
 }
 

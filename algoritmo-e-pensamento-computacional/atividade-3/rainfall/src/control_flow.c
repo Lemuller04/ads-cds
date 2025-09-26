@@ -12,8 +12,8 @@ int start(void) {
   /*
    * Fictional neighborhood names
    * If you want to add, remove, or change a neighborhood name,
-   * you can do it here, int his array. Just remember to also
-   * update the constat NEIGHBORHOODS_TRACKED at include/data.h
+   * you can do it here, in this array. Just remember to also
+   * update the constant NEIGHBORHOODS_TRACKED at include/data.h
    */
   char neighborhood_names[][50] = {"Jardim Bela Vista", "Belford Roxo",
                                    "Leblon"};
