@@ -15,8 +15,7 @@ int start(void) {
    * you can do it here, in this array. Just remember to also
    * update the constant NEIGHBORHOODS_TRACKED at include/data.h
    */
-  char neighborhood_names[][50] = {"Jardim Bela Vista", "Belford Roxo",
-                                   "Leblon"};
+  char neighborhood_names[][50] = {"Jardim Bela Vista", "Leblon"};
 
   State state = MAIN_MENU;
   Neighborhood neighborhoods[NEIGHBORHOODS_TRACKED];
