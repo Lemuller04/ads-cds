@@ -1,0 +1,131 @@
+header {
+  position: relative;
+
+  & ul {
+    list-style-type: none;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  & h1 {
+    color: var(--color-primary);
+  }
+}
+
+.header-top-bar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-bg);
+  z-index: 20;
+}
+
+.page-header .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 10;
+  will-change: opacity;
+  transition: opacity .2s ease-in-out;
+}
+
+/* HAMBUGUER MENU STYLES */
+
+.header-nav-button {
+  will-change: transform;
+  transition: transform .2s ease-out;
+}
+
+.hamburguer-menu-opened {
+  transform: rotate(90deg);
+}
+
+.page-header .header-menu-close,
+.page-header .header-menu-open {
+  will-change: opacity;
+  transition: opacity .1s ease-in;
+}
+
+.page-header .header-nav-button {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+}
+
+.page-header .header-nav-button:focus {
+  outline: 2px solid var(--color-accent);
+}
+
+.page-header .header-nav-button:active {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+/* MOBILE AND DESKTOP NAV MENU STYLES */
+
+.page-header .header-desktop-nav {
+  display: none;
+
+  & ul {
+    display: flex;
+    gap: .6em;
+
+    & a {
+      padding: 0 .5em;
+    }
+  }
+}
+
+.page-header .header-mobile-nav {
+  z-index: 15;
+  position: fixed;
+  right: 0;
+  padding: 1em;
+  font-size: 1.5rem;
+  background-color: var(--color-bg);
+  height: 100vh;
+
+  transform: translateX(100%);
+  will-change: transform;
+  transition: transform .2s ease-out;
+
+  & ul {
+    display: grid;
+    align-content: start;
+    gap: 1em;
+  }
+
+  & a {
+    display: block;
+    height: fit-content;
+    padding-right: 2em;
+  }
+}
+
+.mobile-nav-slide {
+  transform: translateX(0) !important;
+}
+
+@media (min-width: 780px) {
+
+  .header-mobile-nav,
+  .header-nav-button {
+    display: none;
+  }
+
+  .header-desktop-nav {
+    display: block !important;
+  }
+
+  .page-header .backdrop {
+    opacity: 0;
+  }
+}
